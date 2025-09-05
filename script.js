@@ -1,7 +1,7 @@
 // --- Pusher 配置占位符 ---
 // 请在此处替换为你自己的 Pusher Key 和 Cluster
-const PUSHER_KEY = '在此处替换你的KEY';
-const PUSHER_CLUSTER = '在此处替换你的CLUSTER';
+const PUSHER_KEY = 'b2c890cc4325ab6b37e3';
+const PUSHER_CLUSTER = 'ap1';
 
 // --- 后端配置 ---
 // 你的后端需要一个端点（Endpoint）来接收消息，并将其推送到 Pusher。
