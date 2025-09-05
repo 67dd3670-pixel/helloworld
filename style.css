@@ -1,0 +1,116 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 0;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#messages {
+    flex-grow: 1;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message .nickname {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.message .text {
+    font-size: 1em;
+}
+
+.message.sent {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.received {
+    background-color: #e9e9eb;
+    color: #333;
+    align-self: flex-start;
+}
+
+.input-area {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f7f9;
+}
+
+#nickname-input {
+    flex-basis: 150px;
+    margin-right: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#nickname-input, #message-input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+#nickname-input:focus, #message-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
